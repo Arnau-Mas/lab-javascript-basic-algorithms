@@ -29,6 +29,7 @@
     }
 
 // Iteration 3: Loops
+    console.log("Iteration3: Loops");
     for(let i=0; i<10; i++){
         console.log(i+1);
     }
@@ -43,7 +44,6 @@
         }
     }
 
-    console.log("Iteration3: Loops");
     if(hacker1){
         for(let i=0; i<hacker1.length; i++){
             console.log(hacker1[i].toUpperCase());
