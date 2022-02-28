@@ -43,26 +43,25 @@
             console.log(i);
         }
     }
-    let hacker1Modified = [];
+    let hacker1Modified = '';
     let hacker2Reverse = [];
 
     if(hacker1){
         for(let i=0; i<hacker1.length; i++){
-            hacker1Modified.push(hacker1[i].toUpperCase(), " "); 
+            hacker1Modified += `${hacker1[i].toUpperCase()} `; 
         }
-        hacker1Modified.pop();
+
         console.log(hacker1Modified);
     }
 
     if(hacker2){
         for(let i=hacker2.length; i>0; i--){
-            hacker2Reverse.push(hacker2[i-1]);
+            hacker2Reverse += hacker2[i-1];
         }
         console.log(hacker2Reverse);
     }
 
     if(hacker1 && hacker2){
-        console.log(hacker1, hacker2)
         if(hacker1<hacker2){
             console.log('The driver\'s name goes first.')
         }else if(hacker1>hacker2){
